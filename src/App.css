@@ -1,4 +1,5 @@
 .App {
+  background-color: rgb(151, 148, 148);
   text-align: center;
 }
 
@@ -35,4 +36,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card {
+  background-color: lightblue;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  margin: 1rem;
+  padding: 10 px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 7px 10px 12px -5px bisque
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eceff1;
+  margin: 1rem;
+  padding: 50 px;
+  border-radius: 10px;
+  transition: all ease 500ms;
+}
+
+.card img:hover {
+ transform:scale(1.2);
+ opacity:70%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} 
+
+.container {
+  padding: 2px 2px;
+}
+
+.maincontainer {
+  background-color: rgb(151, 148, 148);
+}
+
+.Pokedex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+.Winner {
+  color: green;
+}
+
+.Loser {
+  color: red;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
 }
